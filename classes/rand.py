@@ -1,5 +1,8 @@
 import random
+from random import shuffle
 
 def RandomGetal():
-	return random.randint(0,5)
+	return str(random.randint(0,5))
+
+
 
