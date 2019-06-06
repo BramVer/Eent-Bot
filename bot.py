@@ -1,5 +1,6 @@
 # Work with Python 3.6
 import discord
+from classes.rand import RandomGetal
 
 TOKEN = "NTg1Nzk5NjQzNzgzNDk1Njgy.XPfVRg.b4Libu2bNjdy-qSNaYWQeJjvRDY"
 
@@ -17,6 +18,10 @@ async def on_message(message):
     if 'moeke' in message.content:
         msg = 'oooh moeke'.format(message)
         await client.send_message(message.channel,msg)
+
+    if message.content.startswith('!rtd'):
+        msg = RandomGetal().format(message)
+        await client.send_message(message.channel, msg)
 
 @client.event
 async def on_ready():
