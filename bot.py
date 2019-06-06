@@ -2,7 +2,7 @@
 import discord
 from classes.rand import RandomGetal
 
-TOKEN = "NTg1Nzk5NjQzNzgzNDk1Njgy.XPfVRg.b4Libu2bNjdy-qSNaYWQeJjvRDY"
+TOKEN = "NTg1Nzk5NjQzNzgzNDk1Njgy.XPkMig.aZepKp_bHwFXnaTjIo7tBFFuNnw"
 
 client = discord.Client()
 
