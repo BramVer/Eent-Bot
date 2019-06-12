@@ -9,5 +9,6 @@ def random_ongeluk():
 		  "Je bent op een blokje lego gaan staan, sterkte!",
 		  "Je probeerde oud brood te smikkelen en smakkelen en hebt dusdanig je gebit en kiezen naar de filipijnen geholpa!!",
 		  ]
+	return random.choice(ar)
 
 
