@@ -32,11 +32,16 @@ async def quoteS(ctx, *args):
 
 @bot.event
 async def on_message(message):
+    arrGeluk = ['Je bent van de trap gevallen en hebt nu hersenschade', 'Je bent op een stuk lego gaan staan, sterkte!', 'idk ge zijt gwn dood lol xd']
     await bot.process_commands(message)
     if message.author == bot.user:
         return
     if 'grt' in message.content:
         await message.channel.send('grt')
+    if 'burger' in message.content:
+        await message.channel.send(burger_moment())
+    if 'ongeluk' in message.content:
+        await message.channel.send(random.choice(arrGeluk))
 
 
 
