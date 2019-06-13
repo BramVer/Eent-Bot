@@ -2,28 +2,32 @@
 
 import discord
 from classes.rps import spelen 
+from classes.burger import burger_moment
 from discord import Game
 from discord.ext import commands
 
 
 
-bot = commands.Bot(command_prefix='$')
+
+bot = commands.Bot(command_prefix='!')
 
 client = discord.Client()
 
 @bot.event
 async def on_ready():
+    arr = ['broodt eten','zwemmen in de water', 'grt zeggen', 'kwaken', 'eent zijn', 'playing playing playing playing', 'xD', 'owo', 'uwu']
+
     print (bot.user.name)
     await bot.change_presence(activity=discord.Game(name='broodt eten'))
 
 
-@client.event
+@bot.event
 async def on_message(message):
-    if message.author == client.user:
+    if message.author == bot.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+    if 'grt' in message.content:
+        await message.channel.send('grt')
 
 @bot.command()
 async def test(ctx, *args):
@@ -32,6 +36,8 @@ async def test(ctx, *args):
 @bot.command()
 async def rps(ctx, *args):
     await ctx.send(spelen(args))
+
+
  
 
 
