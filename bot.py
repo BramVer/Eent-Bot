@@ -2,6 +2,8 @@ import discord
 from classes.rps import spelen 
 from classes.samson import quote
 from classes.burger import burger_moment
+from classes.weertje import huidig_weer
+from classes.vang_maar import vangen
 from discord import Game
 from discord.ext import commands
 import random
@@ -29,6 +31,15 @@ async def rps(ctx, *args):
 async def quoteS(ctx, *args):
     await ctx.send(quote(args))
 
+@bot.command()
+async def weertje(ctx):
+    await ctx.send(huidig_weer())
+
+
+@bot.command()
+async def vang(ctx):
+    await ctx.send(vangen())    
+
 
 @bot.event
 async def on_message(message):
@@ -42,6 +53,8 @@ async def on_message(message):
         await message.channel.send(burger_moment())
     if 'ongeluk' in message.content:
         await message.channel.send(random.choice(arrGeluk))
+    if 'lole' in message.content:
+        await message.channel.send('xd')
 
 
 
