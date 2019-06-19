@@ -34,6 +34,8 @@ async def quoteS(ctx, *args):
 @bot.command()
 async def weertje(ctx):
     await ctx.send(huidig_weer())
+    await ctx.send(file=discord.File('classes/weerbericht.jpg'))
+
 
 
 @bot.command()
@@ -55,6 +57,8 @@ async def on_message(message):
         await message.channel.send(random.choice(arrGeluk))
     if 'lole' in message.content:
         await message.channel.send('xd')
+    if 'weertje' in message.content:
+        await message.add_reaction('🏓')
 
 
 
