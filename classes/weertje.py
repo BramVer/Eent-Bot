@@ -20,9 +20,10 @@ def huidig_weer():
 
 	img = Image.open("classes/weer.jpg")
  
-	fnt = ImageFont.truetype('/snap/pycharm-community/132/jre64/lib/fonts/DroidSans-Bold.ttf', 80)
+	fnt = ImageFont.truetype('/snap/pycharm-community/132/jre64/lib/fonts/DroidSans-Bold.ttf', 50)
 	d = ImageDraw.Draw(img)
-	d.text((10,100), full_string, font=fnt, fill=(0, 0, 0))
+	d.text((10,300), full_string, font=fnt, fill=(0,0,0))
+	d.text((15,295), full_string, font=fnt, fill=(255,255,0))
 	img.save('classes/weerbericht.jpg')
 
 
@@ -30,7 +31,6 @@ def huidig_weer():
 	# return f"The sky in {name} is {mainWeer}, \n with {descWeer} outside. \n The temperature is a decent °C {temp}" 
 
 	
-
 
 
 
