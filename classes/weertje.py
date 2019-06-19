@@ -12,11 +12,11 @@ def huidig_weer():
 	weertje = requests.get('https://api.openweathermap.org/data/2.5/weather?q=Antwerp,be&appid=c0f39dfd1294407009096cbd062acd62&units=metric')
 	weer_json = weertje.json()
 
-	mainWeer=(weer_json['weather'][0]['main'])
-	descWeer=(weer_json['weather'][0]['description'])
-	temp = weer_json['main']['temp']
+	main_weer=(weer_json['weather'][0]['main'])
+	desc_weer=(weer_json['weather'][0]['description'])
+	temp = math.ceil(weer_json['main']['temp'])
 	name= weer_json['name']
-	full_string = f"The sky in {name} is {mainWeer}, \n with {descWeer} outside. \n The temperature is a decent °C {temp}"
+	full_string = f"The sky in {name} is {main_weer}, \n with {desc_weer} outside. \n The temperature is a decent °C {temp}"
 
 	img = Image.open("classes/weer.jpg")
  

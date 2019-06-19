@@ -53,12 +53,15 @@ async def on_message(message):
         await message.channel.send('grt')
     if 'burger' in message.content:
         await message.channel.send(burger_moment())
+        await message.channel.send(file=discord.File('classes/borger.png'))
     if 'ongeluk' in message.content:
         await message.channel.send(random.choice(arrGeluk))
     if 'lole' in message.content:
         await message.channel.send('xd')
     if 'weertje' in message.content:
         await message.add_reaction('🏓')
+    if 'voeten' in message.content:
+        await message.channel.send(file=discord.File('classes/sniff.png'))
 
 
 
