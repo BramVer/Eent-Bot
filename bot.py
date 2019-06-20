@@ -4,6 +4,7 @@ from classes.samson import quote
 from classes.burger import burger_moment
 from classes.weertje import huidig_weer
 from classes.vang_maar import vangen
+
 from discord import Game
 from discord.ext import commands
 import random
@@ -40,7 +41,13 @@ async def weertje(ctx):
 
 @bot.command()
 async def vang(ctx):
-    await ctx.send(vangen())    
+    await ctx.send(vangen())   
+    await ctx.send(file=discord.File('classes/pokemon.jpg')) 
+
+@bot.command()
+async def eent(ctx):
+    await ctx.send(eent())
+    await ctx.send(file=discord.File('classes/eent.jpg'))
 
 
 @bot.event
@@ -50,7 +57,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
     if 'grt' in message.content:
-        await message.channel.send('grt')
+        await message.channel.send('```grt```')
     if 'burger' in message.content:
         await message.channel.send(burger_moment())
         await message.channel.send(file=discord.File('classes/borger.png'))
