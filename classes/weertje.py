@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 # 	celsius = math.floor(celsius)
 # 	return f'°C{celsius}'
 def huidig_weer():
-	weertje = requests.get('https://api.openweathermap.org/data/2.5/weather?q=Antwerp,be&appid=c0f39dfd1294407009096cbd062acd62&units=metric')
+	weertje = requests.get('https://api.openweathermap.org/data/2.5/weather?q=Antwerp,be&MIJN API KEY NIET STELEN&units=metric')
 	weer_json = weertje.json()
 
 	main_weer=(weer_json['weather'][0]['main'])
