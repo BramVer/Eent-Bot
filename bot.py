@@ -80,4 +80,4 @@ async def on_message(message):
 
 
 
-bot.run('NTg1Nzk5NjQzNzgzNDk1Njgy.XPkMig.aZepKp_bHwFXnaTjIo7tBFFuNnw')
+bot.run('geheim dit mag je niet stelen')
