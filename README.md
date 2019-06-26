@@ -6,4 +6,6 @@
 
 !quoteS NAAM voor een random samson en gert quote uit mijn api 
 
++ nog vele verrassingen met de juiste keywords
+
 
