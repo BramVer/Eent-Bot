@@ -11,3 +11,8 @@
 + nog vele verrassingen met de juiste keywords
 
 
+## Arno waar ben je :'(
+Facebook heeft alles verwijdert (i assume dat gij er geen controle over had toch)
+WA HAPPEND?
+Chat op telegram ofzo ples i need my motiverende plaatjes voor overdag en soms in de nacht </3
+# dik rip
